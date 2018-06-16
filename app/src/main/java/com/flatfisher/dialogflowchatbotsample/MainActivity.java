@@ -219,7 +219,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     PackageManager pm = getPackageManager();
                     try {
                         pm.getPackageInfo("com.ubercab", PackageManager.GET_ACTIVITIES);
-                        String uri = "uber://?action=setPickup&pickup=my_location&dropoff[latitude]=65.0070&dropoff[longitude]=25.5181&dropoff[nickname]= Oulun yliopistollinen sairaala";
+                        String uri = "uber://?action=setPickup&pickup=my_location&dropoff[latitude]=65.0577577&dropoff[longitude]=25.471483700&dropoff[nickname]= Suomen Terveystalo Oy";
                         Intent intent = new Intent(Intent.ACTION_VIEW);
                         intent.setData(Uri.parse(uri));
                         startActivity(intent);
