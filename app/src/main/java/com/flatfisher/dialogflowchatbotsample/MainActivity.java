@@ -215,7 +215,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 chatView.receive(receivedMessage);
 
                 speakOut(speech);
-                if(speech.equals("Booking a cab to the nearest hospital now !")) {
+                if(speech.equals("Booking a cab to the nearest hospital now")) {
                     PackageManager pm = getPackageManager();
                     try {
                         pm.getPackageInfo("com.ubercab", PackageManager.GET_ACTIVITIES);
